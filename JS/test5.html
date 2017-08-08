@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width">, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tagArr = document.all;
+        function getCount(domArr){
+            var collect = [];
+            var max = {
+                key = '',
+                count = 0
+            };
+            for(var i = 0;i < domArr.length;i++){
+                
+            }
+        }
+        var docs = document.all;
+            var max = 1;
+            var idx = 1;
+            for (var i = 1; i < docs.length; i++) {
+                if (docs[i].tagName == docs[i - 1].tagName) {
+                    idx++;
+                    if (max < idx) {
+                        max = idx;
+                    }
+                } else {
+                    idx = 1;
+                }
+            }
+            console.log(max);
+    </script>
+</body>
+</html>
