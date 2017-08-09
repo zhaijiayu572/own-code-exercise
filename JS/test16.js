@@ -5,7 +5,7 @@ var rs;
 function parse(obj, str) {
     var reg = /[\[\]\.]+/;
     var arr = str.split(reg);
-
+    console.log(arr);
     for (var prop in obj) {
         if (prop == arr[0]) {
             obj = obj[arr[0]];
@@ -22,4 +22,4 @@ function parse(obj, str) {
     }
     return rs;
 }
-console.log(parse(object, 'b.c'));
+console.log(parse(object, 'd[1].e'));
